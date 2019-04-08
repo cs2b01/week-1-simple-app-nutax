@@ -1,12 +1,43 @@
-<!DOCTYPE html>
+<!doctype HTML>
+
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+<style>
+  #us {
+    color: red;
+  }
+  #ps {
+    color: blue;
+  }
+  </style>
+<script>
+
+function verificar(){
+
+var us = document.getElementById("us");
+var ps = document.getElementById("ps");
+
+if (us.value == ps.value){
+alert("Ingresaste");
+}else{
+alert("No ingresaste");
+}
+us.value = "";
+ps.value = "";
+
+}
+
+
+</script>
+
 </head>
 
 <body>
-Content of the document......
-</body>
+<input type="text" id="us" value="Usuario"/>
+<input type="password" id="ps" value="Contrasena"/>
+<input type="button" id="bt" value="Ingresar" onclick="verificar()">
 
+
+
+</body>
 </html>
